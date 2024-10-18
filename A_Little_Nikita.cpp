@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define f(i, x, y) for (int i = x; i < y; i++)
+#define int long long
+#define yes cout << "Yes\n"
+#define no cout << "No \n"
+#define all(vector) vector.begin(),vector.end()
+
+signed main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin>>t;
+    while(t--){
+        int n,m;
+        cin>>n >> m;
+    
+        if(m>n) no;
+        else if(m==n)   yes;
+        else{
+            int diff = n-m;
+            if(diff%2==0)   yes;
+            else no;
+        }
+    }
+    return 0;
+}
